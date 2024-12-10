@@ -1,7 +1,7 @@
 from flask import Flask, request
 
-from download import download_youtube_video
-from upload import upload_file
+from modules.download import download_youtube_video
+from modules.upload import upload_file
 
 app = Flask(__name__)
 
