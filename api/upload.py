@@ -9,8 +9,8 @@ import qiniu.config
 
 def upload_file(localfile):
     #构建鉴权对象
-    access_key = 'NHeMgdTNz7KsmVZJ4qH-gr-KGErKt6CFM-nON7JO'
-    secret_key = 'qxp0iiOU4cyIC1MWYXVkLgqDifxDIm1BwRADT4aa'
+    access_key = os.getenv('QINIU_AK')
+    secret_key = os.getenv('QINIU_SK')
     q = Auth(access_key, secret_key)
 
     #要上传的空间
